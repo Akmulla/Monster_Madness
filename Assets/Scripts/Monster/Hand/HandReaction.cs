@@ -4,10 +4,7 @@ using System.Collections;
 public class HandReaction : MonoBehaviour
 {
     Animator anim;
-    private float invincibleDuration = 2.0f;
-    //public MonsterReaction head;
     public bool invincible;
-
 
 	void Start ()
     {
@@ -15,15 +12,22 @@ public class HandReaction : MonoBehaviour
         invincible = false;
 	}
 	
-
     void OnTriggerEnter2D(Collider2D other)
     {
-        if ((other.gameObject.CompareTag("DangerZone")) && (!invincible))
+        if ((other.gameObject.CompareTag("Fire")) && (!invincible))
         {
-            //GetHit();
+            StartCoroutine(Burn());
         }
     }
 
+    IEnumerator Burn()
+    {
+        anim.SetBool("Burn", true);
+        invincible = true;
+        yield return new WaitForSeconds(2.0f);
+        anim.SetBool("Burn", false);
+        invincible = false;
+    }
 
     //public void GetHit()
     //{

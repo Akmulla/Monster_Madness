@@ -92,6 +92,7 @@
     <Compile Include="Assets\Scripts\Enemy\FoodReaction.cs" />
     <Compile Include="Assets\Scripts\Monster\Hand\Grab.cs" />
     <Compile Include="Assets\Scripts\Monster\Hand\HandReaction.cs" />
+    <Compile Include="Assets\Scripts\Monster\HeadReaction.cs" />
     <Compile Include="Assets\Scripts\Monster\HorizontalMove.cs" />
     <Compile Include="Assets\Scripts\Monster\VerticalMove.cs" />
     <Compile Include="Assets\Scripts\System\Edges.cs" />
