@@ -5,9 +5,11 @@ public class HandReaction : MonoBehaviour
 {
     Animator anim;
     public bool invincible;
+    Grab grab;
 
 	void Start ()
     {
+        grab = GetComponent<Grab>();
         anim = GetComponentInChildren<Animator>();
         invincible = false;
 	}
@@ -24,9 +26,11 @@ public class HandReaction : MonoBehaviour
     {
         anim.SetBool("Burn", true);
         invincible = true;
+        grab.stunned = true;
         yield return new WaitForSeconds(2.0f);
         anim.SetBool("Burn", false);
         invincible = false;
+        grab.stunned = false;
     }
 
     //public void GetHit()

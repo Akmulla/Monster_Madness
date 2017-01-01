@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class DangerZoneReaction : MonoBehaviour
+public class FireReaction : MonoBehaviour
 {
     private Animator anim;
     Transform tran;
@@ -14,7 +14,7 @@ public class DangerZoneReaction : MonoBehaviour
 
     void Update()
     {
-        if (tran.position.y < (Edges.botEdge+Edges.topEdge)/3.0f)
+        if (tran.position.y < (Edges.botEdge+Edges.topEdge)/2.5f)
         {
             anim.SetTrigger("Boom");
         }

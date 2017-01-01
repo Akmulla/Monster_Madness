@@ -24,7 +24,6 @@ public class SpawnWaves : MonoBehaviour
         StartCoroutine(SpawnDangerZone());
     }
 	
-
     IEnumerator SpawnCitizen()
     {
         while (true)

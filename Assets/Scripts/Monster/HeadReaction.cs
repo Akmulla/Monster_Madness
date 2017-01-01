@@ -24,7 +24,7 @@ public class HeadReaction : MonoBehaviour
             {
                 anim.SetTrigger("GetHit");
                 VerticalMove.vert_move.SlowDown();
-                invincible = true;
+                //invincible = true;
             }
     }
 }
