@@ -5,7 +5,8 @@ public class VerticalMove : MonoBehaviour
 {
     public static VerticalMove vert_move;
     public float maxSpeed;
-    public float speed;
+    [SerializeField]
+    float speed;
 	
     void Awake()
     {
@@ -32,7 +33,7 @@ public class VerticalMove : MonoBehaviour
 
     void Start()
     {
-        speed = maxSpeed;
+        
         StartCoroutine(IncreaseSpeedByTime());
     }
 

@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 //------------------------------------------------------------------------------
 public class MainController : MonoBehaviour
 {
-    private static MainController mainController;
+    public static MainController mainController;
 
     public static bool isPaused;
     private static float savedTimeScale;
@@ -34,6 +34,19 @@ public class MainController : MonoBehaviour
             }
         }
     }
+
+    public static void EndGame(bool win)
+    {
+        if (win)
+        {
+            SwitchScene("Win");
+        }
+        else
+        {
+            SwitchScene("Lose");
+        }
+    }
+
     public static AsyncOperation GetAsync()
     {
         return mainController.sceneLoadTask;
@@ -50,8 +63,8 @@ public class MainController : MonoBehaviour
         //Setup the singleton instance
         mainController = this;
 
-        //currentSceneName = "MainMenu";
-
+        currentSceneName = "Preload";
+        nextSceneName = "Main_Menu";
         //Setup the array of updateDelegates
         updateDelegates = new UpdateDelegate[(int)SceneState.Count];
 
@@ -64,7 +77,7 @@ public class MainController : MonoBehaviour
         updateDelegates[(int)SceneState.Ready] = UpdateSceneReady;
         updateDelegates[(int)SceneState.Run] = UpdateSceneRun;
 
-        nextSceneName = "MainMenu";
+        
         sceneState = SceneState.Reset;
         //GetComponent<Camera>().orthographicSize = Screen.height/2;
     }
@@ -114,6 +127,7 @@ public class MainController : MonoBehaviour
     // attach the new scene controller to start cascade of loading
     private void UpdateSceneReset()
     {
+        //print("reset");
         // run a gc pass
         System.GC.Collect();
         sceneState = SceneState.Preload;

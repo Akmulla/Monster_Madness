@@ -13,13 +13,11 @@
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile>
-    </CompilerResponseFile>
+    <CompilerResponseFile></CompilerResponseFile>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>Android:13</UnityBuildTarget>
     <UnityVersion>5.4.1f1</UnityVersion>
-    <RootNamespace>
-    </RootNamespace>
+    <RootNamespace></RootNamespace>
     <LangVersion Condition=" '$(VisualStudioVersion)' != '10.0' ">4</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -78,28 +76,27 @@
     <Compile Include="Assets\Old\Scripts\Enemy\Citizen\CitizenMove.cs" />
     <Compile Include="Assets\Old\Scripts\Enemy\Citizen\CitizenReaction.cs" />
     <Compile Include="Assets\Old\Scripts\Enemy\Destroy.cs" />
-    <Compile Include="Assets\Old\Scripts\Enemy\Helicopter\HelicopterLeave.cs" />
-    <Compile Include="Assets\Old\Scripts\Enemy\Helicopter\HelicopterMove.cs" />
     <Compile Include="Assets\Old\Scripts\Enemy\SwitchSprite.cs" />
-    <Compile Include="Assets\Old\Scripts\GameController.cs" />
     <Compile Include="Assets\Old\Scripts\GameOverWindow.cs" />
     <Compile Include="Assets\Old\Scripts\LevelController.cs" />
-    <Compile Include="Assets\Old\Scripts\Monster\MonsterAnimationFunctions.cs" />
-    <Compile Include="Assets\Old\Scripts\Monster\MonsterReaction.cs" />
     <Compile Include="Assets\Scripts\Enemy\DestroyOnDanger.cs" />
     <Compile Include="Assets\Scripts\Enemy\DestroyOnExit.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyInfo.cs" />
     <Compile Include="Assets\Scripts\Enemy\Fire\FireReaction.cs" />
     <Compile Include="Assets\Scripts\Enemy\FoodReaction.cs" />
+    <Compile Include="Assets\Scripts\Helicopter\HelicopterLeave.cs" />
+    <Compile Include="Assets\Scripts\Helicopter\HelicopterMove.cs" />
     <Compile Include="Assets\Scripts\Monster\Hand\Grab.cs" />
     <Compile Include="Assets\Scripts\Monster\Hand\HandReaction.cs" />
     <Compile Include="Assets\Scripts\Monster\HeadReaction.cs" />
     <Compile Include="Assets\Scripts\Monster\HorizontalMove.cs" />
     <Compile Include="Assets\Scripts\Monster\VerticalMove.cs" />
     <Compile Include="Assets\Scripts\System\Edges.cs" />
+    <Compile Include="Assets\Scripts\System\GameController.cs" />
     <Compile Include="Assets\Scripts\System\MainController.cs" />
     <Compile Include="Assets\Scripts\System\Pool.cs" />
     <Compile Include="Assets\Scripts\System\SpawnWaves.cs" />
+    <Compile Include="Assets\Scripts\UI\StartGame.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>

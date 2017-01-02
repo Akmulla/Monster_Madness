@@ -22,6 +22,7 @@ public class HeadReaction : MonoBehaviour
         else
             if ((other.gameObject.CompareTag("Slower")) && (!invincible))
             {
+                //print(other.gameObject);
                 anim.SetTrigger("GetHit");
                 VerticalMove.vert_move.SlowDown();
                 //invincible = true;
