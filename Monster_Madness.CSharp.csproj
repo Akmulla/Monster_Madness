@@ -77,7 +77,6 @@
     <Compile Include="Assets\Old\Scripts\Enemy\Citizen\CitizenReaction.cs" />
     <Compile Include="Assets\Old\Scripts\Enemy\Destroy.cs" />
     <Compile Include="Assets\Old\Scripts\Enemy\SwitchSprite.cs" />
-    <Compile Include="Assets\Old\Scripts\GameOverWindow.cs" />
     <Compile Include="Assets\Old\Scripts\LevelController.cs" />
     <Compile Include="Assets\Scripts\Enemy\DestroyOnDanger.cs" />
     <Compile Include="Assets\Scripts\Enemy\DestroyOnExit.cs" />
@@ -88,6 +87,7 @@
     <Compile Include="Assets\Scripts\Helicopter\HelicopterMove.cs" />
     <Compile Include="Assets\Scripts\Monster\Hand\Grab.cs" />
     <Compile Include="Assets\Scripts\Monster\Hand\HandReaction.cs" />
+    <Compile Include="Assets\Scripts\Monster\HeadAnimation.cs" />
     <Compile Include="Assets\Scripts\Monster\HeadReaction.cs" />
     <Compile Include="Assets\Scripts\Monster\HorizontalMove.cs" />
     <Compile Include="Assets\Scripts\Monster\VerticalMove.cs" />
@@ -96,6 +96,7 @@
     <Compile Include="Assets\Scripts\System\MainController.cs" />
     <Compile Include="Assets\Scripts\System\Pool.cs" />
     <Compile Include="Assets\Scripts\System\SpawnWaves.cs" />
+    <Compile Include="Assets\Scripts\UI\GameOverWindow.cs" />
     <Compile Include="Assets\Scripts\UI\StartGame.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
