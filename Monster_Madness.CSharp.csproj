@@ -93,8 +93,10 @@
     <Compile Include="Assets\Scripts\Monster\VerticalMove.cs" />
     <Compile Include="Assets\Scripts\System\Edges.cs" />
     <Compile Include="Assets\Scripts\System\GameController.cs" />
+    <Compile Include="Assets\Scripts\System\GenerateRoad.cs" />
     <Compile Include="Assets\Scripts\System\MainController.cs" />
     <Compile Include="Assets\Scripts\System\Pool.cs" />
+    <Compile Include="Assets\Scripts\System\RoadToPool.cs" />
     <Compile Include="Assets\Scripts\System\SpawnWaves.cs" />
     <Compile Include="Assets\Scripts\UI\GameOverWindow.cs" />
     <Compile Include="Assets\Scripts\UI\StartGame.cs" />

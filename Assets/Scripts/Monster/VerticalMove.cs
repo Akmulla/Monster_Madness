@@ -4,6 +4,7 @@ using System.Collections;
 public class VerticalMove : MonoBehaviour
 {
     public static VerticalMove vert_move;
+    public static Transform monster_head;
     public float maxSpeed;
     [SerializeField]
     float speed;
@@ -11,6 +12,7 @@ public class VerticalMove : MonoBehaviour
     void Awake()
     {
         vert_move = this;
+        monster_head = gameObject.transform;
     }
 
     public float Speed
