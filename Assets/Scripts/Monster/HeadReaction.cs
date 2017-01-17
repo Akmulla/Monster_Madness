@@ -5,6 +5,7 @@ public class HeadReaction : MonoBehaviour
 {
     Animator anim;
     bool invincible;
+    public static HeadReaction head;
 
     public enum MonsterState { Run,EatHelicopter};
     public MonsterState currentState;
@@ -13,6 +14,7 @@ public class HeadReaction : MonoBehaviour
 
     void Awake()
     {
+        head = this;
         updateDelegates = new UpdateDelegate[2];
         updateDelegates[(int)MonsterState.Run] = Run;
         updateDelegates[(int)MonsterState.EatHelicopter] = EatHelicopter;
@@ -24,6 +26,13 @@ public class HeadReaction : MonoBehaviour
         invincible = false;
         anim = GetComponentInChildren<Animator>();
 	}
+
+    public void Burn()
+    {
+        anim.SetTrigger("Burn");
+    }
+
+    
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -65,6 +74,6 @@ public class HeadReaction : MonoBehaviour
 
     void EatHelicopter()
     {
-
+        //если в процессе поедания вертолета, то нихуя не делает
     }
 }

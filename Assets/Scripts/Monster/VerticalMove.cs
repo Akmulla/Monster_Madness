@@ -35,7 +35,6 @@ public class VerticalMove : MonoBehaviour
 
     void Start()
     {
-        
         StartCoroutine(IncreaseSpeedByTime());
     }
 
